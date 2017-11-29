@@ -80,4 +80,21 @@ $(document).ready(function() {
             icon.removeClass('ion-close-round');
         }        
     });
+    
+//    Maps
+    var map = new GMaps({
+      div: '.map',
+      lat: 24.316094,
+      lng: 109.516323,
+      zoom:12
+    });
+    
+    map.addMarker({
+      lat: 24.313521,
+      lng: 109.414701,
+      title: 'Lima',
+      infoWindow: {
+          content: '<p>Our Liuzhou HQ</p>'
+      }
+    });
 });
